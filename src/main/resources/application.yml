@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: redpackets
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&autoReconnect=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      minimum-idle: 5
+  jpa:
+    database: MYSQL
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+  http:
+    encoding:
+      charset: utf-8
+    converters:
+      preferred-json-mapper: jackson
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-total: 10000
+      block-when-exhausted: false
+    timeout: 3000
+
