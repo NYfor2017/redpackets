@@ -93,7 +93,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <mysql-connector>5.1.39</mysql-connector>
+        <mysql-connector>8.0.28</mysql-connector>
     </properties>
 
     <build>
